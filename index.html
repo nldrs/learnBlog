@@ -1,13 +1,13 @@
 ---
 layout: default
-title: WangDing's Blog
+title: 李鹏飞的简单博客
 ---
 
 <h2>{{ page.title }}<h2>
 <p>new article list</p>
 <ul>
-  {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+ {% for post in site.posts %}
+<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
